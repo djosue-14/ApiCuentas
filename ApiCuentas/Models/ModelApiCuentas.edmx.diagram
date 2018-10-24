@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5b86d4dc53fc4c52acf02bbd5978285e" Name="Diagram1">
+        <EntityTypeShape EntityType="ApiCuentasModel.Clientes" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApiCuentasModel.DetalleVentas" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApiCuentasModel.Financiamiento" Width="1.5" PointX="5.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApiCuentasModel.Pagos" Width="1.5" PointX="5.25" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApiCuentasModel.Productos" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApiCuentasModel.TipoVenta" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApiCuentasModel.Ventas" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <AssociationConnector Association="ApiCuentasModel.FK_Ventas_Clientes" ManuallyRouted="false" />
+        <AssociationConnector Association="ApiCuentasModel.FK_DetalleVentas_Productos" ManuallyRouted="false" />
+        <AssociationConnector Association="ApiCuentasModel.FK_DetalleVentas_Ventas" ManuallyRouted="false" />
+        <AssociationConnector Association="ApiCuentasModel.FK_Financiamiento_Ventas" ManuallyRouted="false" />
+        <AssociationConnector Association="ApiCuentasModel.FK_Pagos_Ventas" ManuallyRouted="false" />
+        <AssociationConnector Association="ApiCuentasModel.FK_Ventas_TipoVenta" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
